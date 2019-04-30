@@ -34,6 +34,12 @@ public class MenuCTRL : MonoBehaviour
     void Update()
     {
         UpdateTexture();
+        // 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
     }
 
     public void UpdateTexture()

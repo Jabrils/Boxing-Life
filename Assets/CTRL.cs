@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CTRL : MonoBehaviour
 {
@@ -507,7 +508,7 @@ public class CTRL : MonoBehaviour
         // 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene("menu");
         }
 
         // 
